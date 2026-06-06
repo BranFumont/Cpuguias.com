@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arquitectura Básica del Procesador</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f7f6;
+        padding:30px;
+    }
+
+    h1{
+        text-align:center;
+        margin-bottom:10px;
+        color:#2c3e50;
+    }
+
+    .descripcion{
+        text-align:center;
+        margin-bottom:30px;
+        color:#555;
+    }
+
+    .contenedor{
+        max-width:900px;
+        margin:auto;
+    }
+
+    details{
+        background:white;
+        margin-bottom:15px;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 3px 10px rgba(0,0,0,.1);
+    }
+
+    summary{
+        padding:20px;
+        cursor:pointer;
+        font-weight:bold;
+        font-size:18px;
+        list-style:none;
+    }
+
+    summary:hover{
+        background:#ecf0f1;
+    }
+
+    .resumen{
+        color:#777;
+        font-size:14px;
+        margin-top:5px;
+        font-weight:normal;
+    }
+
+    .contenido{
+        padding:20px;
+        border-top:1px solid #ddd;
+        line-height:1.7;
+    }
+
+    .contenido h3{
+        color:#2c3e50;
+        margin-bottom:10px;
+    }
+
+</style>
+</head>
+<body>
+
+<h1>Arquitectura Básica del Procesador</h1>
+
+<p class="descripcion">
+Haz clic en cada casilla para ver la información completa.
+</p>
+
+<div class="contenedor">
+
+    <details>
+        <summary>
+            ¿Qué es un Procesador?
+            <div class="resumen">Cerebro principal del sistema</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Definición</h3>
+            <p>
+                El procesador o CPU (Unidad Central de Procesamiento) es el
+                componente encargado de ejecutar instrucciones, procesar datos
+                y coordinar el funcionamiento de todos los dispositivos de una computadora.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+            Unidad de Control (UC)
+            <div class="resumen">Coordina todas las operaciones</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Función</h3>
+            <p>
+                La Unidad de Control interpreta las instrucciones de los programas
+                y envía señales a los demás componentes para indicar qué acciones
+                deben realizarse y en qué momento.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+            Unidad Aritmético-Lógica (ALU)
+            <div class="resumen">Realiza cálculos y comparaciones</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Función</h3>
+            <p>
+                La ALU se encarga de realizar operaciones matemáticas como sumas,
+                restas, multiplicaciones y divisiones, además de comparaciones
+                lógicas entre datos.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+            Registros
+            <div class="resumen">Almacenamiento temporal ultrarrápido</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Función</h3>
+            <p>
+                Los registros son pequeñas memorias internas del procesador que
+                almacenan temporalmente datos e instrucciones mientras se ejecutan.
+                Son los elementos de almacenamiento más rápidos de la CPU.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+         Memoria Caché
+            <div class="resumen">Datos frecuentes de acceso</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Función</h3>
+            <p>
+                La memoria caché almacena información utilizada frecuentemente
+                para que el procesador pueda acceder a ella más rápido que si
+                tuviera que buscarla en la memoria RAM.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+            Buses del Procesador
+            <div class="resumen">Comunicación entre componentes</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Función</h3>
+            <p>
+                Los buses son canales de comunicación que transportan datos,
+                direcciones e instrucciones entre la CPU, la memoria y otros
+                dispositivos del sistema.
+            </p>
+        </div>
+    </details>
+
+    <details>
+        <summary>
+            Funcionamiento General
+            <div class="resumen">Buscar, interpretar y ejecutar</div>
+        </summary>
+
+        <div class="contenido">
+            <h3>Ciclo de instrucción</h3>
+            <p>
+                El procesador obtiene una instrucción desde la memoria,
+                la interpreta mediante la Unidad de Control y finalmente la
+                ejecuta utilizando la ALU, los registros y otros recursos internos.
+                Este proceso se repite millones o miles de millones de veces por segundo.
+            </p>
+        </div>
+    </details>
+
+</div>
+
+</body>
+</html>
